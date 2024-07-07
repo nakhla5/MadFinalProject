@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/y2"
+    android:gravity="center"
+    tools:context=".Fragment2">
+
+ <ImageView
+     android:id="@+id/profile_img"
+     android:layout_width="match_parent"
+     android:layout_height="200dp"
+     android:src="@drawable/profile"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     android:layout_marginTop="10dp"/>
+
+ <EditText
+     android:id="@+id/profile_name"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:background="@color/skin"
+     android:hint="@string/your_name"
+     android:padding="13dp"
+     android:textSize="20sp"
+     android:textStyle="bold"
+     android:layout_marginTop="20dp"
+     android:drawablePadding="10dp"
+     android:elevation="3dp"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/profile_img"
+     app:layout_constraintWidth_percent=".8"
+     app:drawableLeftCompat="@drawable/copy_of_ic_baseline_person_24" />
+
+ <EditText
+     android:id="@+id/profile_email"
+     android:inputType="textEmailAddress"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:background="@color/skin"
+     android:drawablePadding="10dp"
+     android:layout_marginTop="10dp"
+     android:elevation="3dp"
+     android:hint="@string/your_email2"
+     android:padding="13dp"
+     android:textSize="20sp"
+     android:textStyle="bold"
+     app:drawableLeftCompat="@drawable/account"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/profile_name"
+     app:layout_constraintWidth_percent=".8" />
+
+
+ <EditText
+     android:id="@+id/profile_address"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:background="@color/skin"
+     android:drawablePadding="10dp"
+     android:elevation="3dp"
+     android:layout_marginTop="10dp"
+     android:hint="@string/your_address"
+     android:padding="13dp"
+     android:textSize="20sp"
+     android:textStyle="bold"
+     app:drawableLeftCompat="@drawable/copy_of_ic_baseline_location_on_24"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/profile_email"
+     app:layout_constraintWidth_percent=".8" />
+ <EditText
+     android:id="@+id/profile_number"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:background="@color/skin"
+     android:drawablePadding="10dp"
+     android:layout_marginTop="10dp"
+     android:elevation="3dp"
+     android:hint="@string/phone_number"
+     android:padding="13dp"
+     android:textSize="20sp"
+     android:textStyle="bold"
+     app:drawableLeftCompat="@drawable/copy_of_ic_baseline_local_phone_24"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/profile_address"
+     app:layout_constraintWidth_percent=".8" />
+
+ <Button
+     android:id="@+id/update"
+     android:layout_width="150dp"
+     android:layout_height="wrap_content"
+     android:background="@color/lime"
+     android:padding="14dp"
+     android:text="@string/update"
+     android:textAllCaps="false"
+     android:textSize="20sp"
+     android:textStyle="bold"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/profile_number"
+     app:layout_constraintVertical_bias="0.3"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
